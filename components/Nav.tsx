@@ -1,8 +1,24 @@
-const Nav: React.FC<any> = (props:any) => {
+import Link from "next/link";
+
+interface Props {
+    page: string
+}
+
+const Nav: React.FC<Props> = ({ page }) => {
     return(
-        <div>
-            <h1>COMPOENTS</h1>
-        </div>
+        <nav>
+            <div>
+                <Link href="/" >
+                    <a className={page === "home" ? "nav-active":""}>Home</a>
+                </Link>
+                <Link href="/works">
+                    <a className={page === "works" ? "nav-active":""}>Works</a>
+                </Link>
+                <Link href="/contact">
+                    <a className={page === "contact" ? "nav-active":""}>Contact</a>
+                </Link>
+            </div>
+        </nav>
     )
 }
 

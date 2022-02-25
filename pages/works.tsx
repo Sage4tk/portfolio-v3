@@ -7,7 +7,8 @@ const Works :NextPage = () => {
     return (
         <div className="works-page">
             <h1>Works Page</h1>
-            <Nav />
+            <Nav page="works" />
+            
         </div>
     )
 }
