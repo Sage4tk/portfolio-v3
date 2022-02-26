@@ -2,6 +2,7 @@
 
 $font: 'Heebo', sans-serif;
 $primary: #ff6464;
+$secondary: #EDF7FA;
 
 * {
     margin: 0;
@@ -20,6 +21,7 @@ nav {
     position: absolute;
     top: 0;
     right: 0;
+    z-index: 1;
 }
 
 nav div a {
@@ -43,9 +45,9 @@ nav div {
 //landing page
 
 .landing-wrapper {
-    width: 100vw;
     height: 100vh;
     padding: 5rem;
+    position: relative;
 }
 
 .landing-wrapper h1 {
@@ -71,4 +73,48 @@ nav div {
     &:hover {
         background-color: #000000;
     }
+}
+
+.main-projects {
+    background-color: $secondary;
+    padding: 32px 148px;
+}
+
+.main-projects_upper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 22px;
+}
+
+.main-projects_upper p {
+    font-size: 1.375rem;
+}
+
+.main-projects_upper a {
+    color: #00A8CC;
+    text-decoration: none;
+}
+
+.main-projects_container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-projects_cards {
+    background-color: #fff;
+    padding: 24px;
+    width: 48%;
+}
+
+.main-projects_cards > *:first-child {
+    font-weight: bold;
+    font-size: 1.625rem;
+    margin-bottom: 1rem;
+}
+
+.main-projects_cards > *:nth-child(2) {
+    font-size: 1.125rem;
+    margin-bottom: 1rem;
 }

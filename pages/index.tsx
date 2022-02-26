@@ -1,6 +1,7 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
+import Link from 'next/link'
 import { useEffect } from 'react'
 
 //components
@@ -29,9 +30,37 @@ const Home: NextPage<any> = ({ projects }) => {
       <Nav page="home"/>
       <section className='landing-wrapper'>
         <h1>Hello World, I am Timothy,<br/>a Front-End Developer</h1>
-        <p>An aspiring developer from the Philippines and a life-long learner. I've coded for years and my mastery on front-end stacks will help solve problems. I do not wish to limit myself so I strive to learn new things everyday.</p>
+        <p>An aspiring developer from the Philippines and a life-long learner. I've coded for years and my mastery on front-end stacks will help solve problems. I wish not to limit myself and strive to learn new things everyday from coding to a better life.</p>
         <button>Download Resume</button>
       </section>
+      <section className='main-projects'>
+        <div className='main-projects_upper'>
+          <p>Recent Posts</p>
+          <Link href="/works">
+            <a>View all</a>
+          </Link>
+        </div>
+        <div className="main-projects_container">
+        {projects && projects.map((e:object, i:number) => {
+          if (i === projects.length - 1|| i === projects.length - 2) return <ProjectCards data={e} key={i} />
+        })}
+        </div>
+      </section>
+    </div>
+  )
+}
+
+interface ProjectCardProps {
+  key: Number,
+  data: Object
+}
+
+const ProjectCards: React.FC<ProjectCardProps> = (props:any) => {
+  return (
+    <div className='main-projects_cards'>
+      <p>{props.data.title}</p>
+      <p>{props.data.technology}</p>
+      <p>{props.data.websiteDescription}</p>
     </div>
   )
 }
