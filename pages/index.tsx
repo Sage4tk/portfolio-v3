@@ -6,6 +6,7 @@ import { useEffect } from 'react'
 
 //components
 import Nav from '../components/Nav'
+import Footer from '../components/Footer'
 
 //get projects from api
 export const getStaticProps = async () => {
@@ -46,6 +47,7 @@ const Home: NextPage<any> = ({ projects }) => {
         })}
         </div>
       </section>
+      <Footer />
     </div>
   )
 }
