@@ -47,6 +47,15 @@ const Home: NextPage<any> = ({ projects }) => {
         })}
         </div>
       </section>
+      <section className="landing-about">
+        <h2>About Me</h2>
+        <div>
+
+        </div>
+        <div>
+          
+        </div>
+      </section>
       <Footer />
     </div>
   )
