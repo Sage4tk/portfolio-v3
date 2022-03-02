@@ -2,6 +2,8 @@ import { NextPage } from "next";
 
 //components
 import Nav from "../components/Nav";
+import Footer from "../components/Footer";
+import { useEffect } from "react";
 
 export const getStaticProps = async () => {
     const res = await fetch("https://zackpersonalapi.herokuapp.com/api/portfolio");
@@ -15,26 +17,35 @@ export const getStaticProps = async () => {
 }
 
 const Works :NextPage<any> = ({ projects }) => {
+    useEffect(() => {
+        console.log(projects)
+    })
     return (
         <div className="works-page">
             <Nav page="works" />
             <h1>Works</h1>
-            <section>
-                {projects && projects.map((data:object, i:number ) => <ProjectCard data={data} key={i} />)}
+            <section className="works-container">
+                {projects && projects.map((data: object, i:number ) => <ProjectCard data={data} key={i} />)}
             </section>
+            <Footer />
         </div>
     )
 }
 
 interface ProjectProps {
     key: Number,
-    data: Object
+    data: any
 }
 
-const ProjectCard: React.FC<ProjectProps> = (props) => {
+const ProjectCard: React.FC<ProjectProps> = ({ data }) => {
     return (
-        <div>
-            <h1>TEST</h1>
+        <div className="works-card">
+            <img src={data.imgUrl} alt={data.title} />
+            <div>
+                <p>{data.title}</p>
+                <p>{data.technology}</p>
+                <p>{data.websiteDescription}</p>
+            </div>
         </div>
     )
 }
