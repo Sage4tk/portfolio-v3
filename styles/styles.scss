@@ -89,6 +89,7 @@ footer p {
     padding: 9px 21px;
     margin-top: 2rem;
     transition: background-color 0.5s;
+    cursor: pointer;
     &:hover {
         background-color: #000000;
     }
@@ -135,6 +136,53 @@ footer p {
 
 .main-projects_cards > *:nth-child(2) {
     font-size: 1.125rem;
+    margin-bottom: 1rem;
+}
+
+.landing-about {
+    padding: 4rem 148px;
+}
+
+.landing-about h2 {
+    margin-bottom: 3rem;
+}
+
+.landing-img_holder {
+    width: 310px;
+    height: auto;
+    margin-right: 2rem;
+}
+
+.landing-img_holder img {
+    border-radius: 6px;
+}
+
+.stack-container {
+    display: flex;
+    padding-bottom: 2rem;
+    border-bottom: 2px solid #e0e0e0;
+    margin-bottom: 2rem;
+}
+
+.stack-exp {
+    width: 72%;
+    display: flex;
+    flex-direction: column;
+}
+
+.stack-exp > *:first-child {
+    font-size: 1.875rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.stack-exp > *:nth-child(2) {
+    font-size: 1.25rem;
+    background-color: #142850;
+    align-self: baseline;
+    color: #fff;
+    padding: 0.1rem 0.5rem;
+    border-radius: 1rem;
     margin-bottom: 1rem;
 }
 

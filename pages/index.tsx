@@ -8,6 +8,10 @@ import { useEffect } from 'react'
 import Nav from '../components/Nav'
 import Footer from '../components/Footer'
 
+//images
+import front from '../img/frontend.jpg';
+import back from '../img/backend.jpg';
+
 //get projects from api
 export const getStaticProps = async () => {
   const res = await fetch("https://zackpersonalapi.herokuapp.com/api/portfolio");
@@ -49,11 +53,25 @@ const Home: NextPage<any> = ({ projects }) => {
       </section>
       <section className="landing-about">
         <h2>Stacks</h2>
-        <div>
-          
+        <div className='stack-container'>
+          <div className='landing-img_holder'>
+            <Image src={front} />
+          </div>
+          <div className='stack-exp'>
+            <p>Front-end Languages</p>
+            <p>Expert</p>
+            <p>My main profeciency is with front-end web technologies with HTML5, CSS3, and JavaScript. With CSS, I use SASS css preprocessor to ensure cross browser compatibility and easier workflow. With JavaScript, I'm profecient with Vanilla JS but my main front-end framework is with ReactJS and NextJS if the project requires alot of functionality. I'm not limited to these languanges and are always open to learn.</p>
+          </div>
         </div>
-        <div>
-
+        <div className='stack-container'>
+          <div className='landing-img_holder'>
+            <Image src={back} />
+          </div>
+          <div className='stack-exp'>
+            <p>Back-end Languages</p>
+            <p>Advance</p>
+            <p>My main profeciency is with front-end web technologies with HTML5, CSS3, and JavaScript. With CSS, I use SASS css preprocessor to ensure cross browser compatibility and easier workflow. With JavaScript, I'm profecient with Vanilla JS but my main front-end framework is with ReactJS and NextJS if the project requires alot of functionality. I'm not limited to these languanges and are always open to learn.</p>
+          </div>
         </div>
       </section>
       <Footer />
