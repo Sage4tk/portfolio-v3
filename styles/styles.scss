@@ -221,3 +221,82 @@ footer p {
     font-size: 1.2rem;
     margin-bottom: 1rem;
 }
+
+//media queries
+
+//mobile
+@media only screen and (max-width: 768px) {
+    //landing page
+    .landing-wrapper {
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .landing-wrapper h1 {
+        font-size: 2rem;
+        margin-top: 100%;
+        text-align: center;
+    }
+
+    .landing-wrapper p {
+        width: 100%;
+        text-align: center;
+    }
+
+    .landing-wrapper button {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .main-projects {
+        padding: 32px 11px;
+    }
+
+    .main-projects_container {
+        flex-direction: column;
+    }
+
+    .main-projects_container > *:not(:last-child) {
+        margin-bottom: 1rem;
+    }
+
+    .main-projects_cards {
+        width: 100%;
+    }
+
+    .main-projects_cards > *:first-child {
+        font-size: 1.375rem;
+        margin-bottom: 12px;
+    }
+
+    .main-projects_cards > *:nth-child(2) {
+        font-size: 1rem;
+        margin-bottom: 12px;
+    }
+
+    .landing-about {
+        padding: 4rem 18px;
+    }
+
+    .stack-container {
+        flex-direction: column;
+    }
+
+    .landing-img_holder {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    .stack-exp {
+        width: 100%;
+    }
+
+    .stack-exp > *:first-child {
+        font-size: 1.5rem;
+    }
+
+    .stack-exp > *:nth-child(2) {
+        font-size: 1rem;
+    }
+}
