@@ -2,7 +2,9 @@ import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
-import { useEffect } from 'react'
+
+//css
+import styles from "../styles/Index.module.scss";
 
 //components
 import Nav from '../components/Nav'
@@ -33,10 +35,12 @@ const Home: NextPage<any> = ({ projects }) => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Nav page="home"/>
-      <section className='landing-wrapper'>
-        <h1>Hello World, I am Timothy,<br/>a Front-End Developer</h1>
-        <p>An aspiring developer from the Philippines and a life-long learner. I've coded for years and my mastery on front-end stacks will help solve problems. I wish not to limit myself and strive to learn new things everyday from coding to a better life.</p>
-        <button>Download Resume</button>
+      <section className={styles.landing_wrapper}>
+        <div>
+          <h1>Hello World, I am Timothy,<br/>a Front-End Developer</h1>
+          <p>An aspiring developer from the Philippines and a life-long learner. I've coded for years and my mastery on front-end stacks will help solve problems. I wish not to limit myself and strive to learn new things everyday from coding to a better life.</p>
+          <button>Download Resume</button>
+        </div>
       </section>
       <section className='main-projects'>
         <div className='main-projects_upper'>
