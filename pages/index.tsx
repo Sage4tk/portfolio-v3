@@ -42,36 +42,36 @@ const Home: NextPage<any> = ({ projects }) => {
           <button>Download Resume</button>
         </div>
       </section>
-      <section className='main-projects'>
-        <div className='main-projects_upper'>
+      <section className={styles.main_projects}>
+        <div className={styles.main_projects_upper}>
           <p>Recent Posts</p>
           <Link href="/works">
             <a>View all</a>
           </Link>
         </div>
-        <div className="main-projects_container">
+        <div className={styles.main_projects_container}>
         {projects && projects.map((e:object, i:number) => {
           if (i === projects.length - 1|| i === projects.length - 2) return <ProjectCards data={e} key={i} />
         })}
         </div>
       </section>
-      <section className="landing-about">
+      <section className={styles.landing_about}>
         <h2>Stacks</h2>
-        <div className='stack-container'>
-          <div className='landing-img_holder'>
+        <div className={styles.stack_container}>
+          <div className={styles.landing_img_holder}>
             <Image src={front} />
           </div>
-          <div className='stack-exp'>
+          <div className={styles.stack_exp}>
             <p>Front-end Languages</p>
             <p>Expert</p>
             <p>My main profeciency is with front-end web technologies with HTML5, CSS3, and JavaScript. With CSS, I use SASS css preprocessor to ensure cross browser compatibility and easier workflow. With JavaScript, I'm profecient with Vanilla JS but my main front-end framework is with ReactJS and NextJS if the project requires alot of functionality. I'm not limited to these languanges and are always open to learn.</p>
           </div>
         </div>
-        <div className='stack-container'>
-          <div className='landing-img_holder'>
+        <div className={styles.stack_container}>
+          <div className={styles.landing_img_holder}>
             <Image src={back} />
           </div>
-          <div className='stack-exp'>
+          <div className={styles.stack_exp}>
             <p>Back-end Languages</p>
             <p>Advance</p>
             <p>My main profeciency is with front-end web technologies with HTML5, CSS3, and JavaScript. With CSS, I use SASS css preprocessor to ensure cross browser compatibility and easier workflow. With JavaScript, I'm profecient with Vanilla JS but my main front-end framework is with ReactJS and NextJS if the project requires alot of functionality. I'm not limited to these languanges and are always open to learn.</p>
@@ -90,7 +90,7 @@ interface ProjectCardProps {
 
 const ProjectCards: React.FC<ProjectCardProps> = (props:any) => {
   return (
-    <div className='main-projects_cards'>
+    <div className={styles.main_projects_cards}>
       <p>{props.data.title}</p>
       <p>{props.data.technology}</p>
       <p>{props.data.websiteDescription}</p>
