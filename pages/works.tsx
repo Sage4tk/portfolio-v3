@@ -5,6 +5,9 @@ import Nav from "../components/Nav";
 import Footer from "../components/Footer";
 import { useEffect } from "react";
 
+//css
+import styles from "../styles/Works.module.scss";
+
 export const getStaticProps = async () => {
     const res = await fetch("https://zackpersonalapi.herokuapp.com/api/portfolio");
     const data = await res.json();
@@ -21,10 +24,10 @@ const Works :NextPage<any> = ({ projects }) => {
         console.log(projects)
     })
     return (
-        <div className="works-page">
+        <div className={styles.works_page}>
             <Nav page="works" />
             <h1>Works</h1>
-            <section className="works-container">
+            <section className={styles.works_container}>
                 {projects && projects.map((data: object, i:number ) => <ProjectCard data={data} key={i} />)}
             </section>
             <Footer />
@@ -39,7 +42,7 @@ interface ProjectProps {
 
 const ProjectCard: React.FC<ProjectProps> = ({ data }) => {
     return (
-        <div className="works-card">
+        <div className={styles.works_card}>
             <img src={data.imgUrl} alt={data.title} />
             <div>
                 <p>{data.title}</p>
