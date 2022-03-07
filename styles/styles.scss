@@ -11,6 +11,11 @@ $secondary: #EDF7FA;
     font-family: $font;
 }
 
+body, html {
+    overflow-x: hidden;
+    position: relative;
+}
+
 //nav styling
 nav {
     height: 70px;
@@ -24,22 +29,23 @@ nav {
     z-index: 1;
 }
 
-nav div a {
+.nav_links a {
     text-decoration: none;
     color: #000;
     font-weight: bold;
     font-size: 20px;
 }
 
-nav div {
+.nav_links {
     width: 300px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
-.nav-active {
-    color: $primary
+.nav_active {
+    color: red !important;
+    background: red;
 }
 
 //footer
@@ -64,3 +70,40 @@ footer p {
 //media queries
 
 //mobile
+@media only screen and (max-width: 768px) {
+    .nav_links {
+        width: 240px;
+        height: 100vh;
+        flex-direction: column;
+        position: absolute;
+        top: 0;
+        right: 0;
+        background: #fff;
+        padding: 4rem 1rem;
+        text-align: center;
+        justify-content: space-around;
+        border-left: 2px solid #EDF7FA;
+        transform: translateX(100vw);
+        transition: 1s;
+    }
+
+    .active {
+        transform: translate(0);
+    }
+
+    .burger {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 24px;
+        position: absolute;
+        z-index: 1;
+        right: 20%;
+    }
+
+    .burger div {
+        height: 2px;
+        width: 32px;
+        background-color: #21243D;
+    }
+}
