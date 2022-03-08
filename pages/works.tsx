@@ -1,4 +1,5 @@
 import { NextPage } from "next";
+import Head from "next/head";
 
 //components
 import Nav from "../components/Nav";
@@ -25,6 +26,9 @@ const Works :NextPage<any> = ({ projects }) => {
     })
     return (
         <div className={styles.works_page}>
+            <Head>
+                <title>Timothy Timbol | Works</title>
+            </Head>
             <Nav page="works" />
             <h1>Works</h1>
             <section className={styles.works_container}>

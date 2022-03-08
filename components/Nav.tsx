@@ -19,13 +19,13 @@ const Nav: React.FC<Props> = ({ page }) => {
             </div>
             <div className={navBar ? "nav_links active":"nav_links"}>
                 <Link href="/" >
-                    <a className={page === "home" ? "nav-active":""}>Home</a>
+                    <a className={page === "home" ? "nav_active":""}>Home</a>
                 </Link>
                 <Link href="/works">
-                    <a className={page === "works" ? "nav-active":""}>Works</a>
+                    <a className={page === "works" ? "nav_active":""}>Works</a>
                 </Link>
                 <Link href="/contact">
-                    <a className={page === "contact" ? "nav-active":""}>Contact</a>
+                    <a className={page === "contact" ? "nav_active":""}>Contact</a>
                 </Link>
             </div>
         </nav>

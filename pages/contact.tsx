@@ -4,6 +4,9 @@ import Head from "next/head";
 //components
 import Nav from "../components/Nav";
 
+//css
+import styles from "../styles/Contacts.module.scss";
+
 const Contacts: NextPage = () => {
     return (
         <div className="contact-page">

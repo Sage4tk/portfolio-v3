@@ -74,7 +74,7 @@ const Home: NextPage<any> = ({ projects }) => {
           <div className={styles.stack_exp}>
             <p>Back-end Languages</p>
             <p>Advance</p>
-            <p>My main profeciency is with front-end web technologies with HTML5, CSS3, and JavaScript. With CSS, I use SASS css preprocessor to ensure cross browser compatibility and easier workflow. With JavaScript, I'm profecient with Vanilla JS but my main front-end framework is with ReactJS and NextJS if the project requires alot of functionality. I'm not limited to these languanges and are always open to learn.</p>
+            <p>I've learned backend development to help understand how the web works and how it adds backbone to the front end spectrum. I have moderate knowledge in PHP and Pyhthon with backend frameworks like Django, HTTP methods to further help business logics in the online world. Furthermore, I've worked with database from relational databases and non-relations ones like MySql and MongoDB</p>
           </div>
         </div>
       </section>

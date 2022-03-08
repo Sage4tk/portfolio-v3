@@ -44,8 +44,7 @@ nav {
 }
 
 .nav_active {
-    color: red !important;
-    background: red;
+    color: $primary !important;
 }
 
 //footer
@@ -84,7 +83,7 @@ footer p {
         justify-content: space-around;
         border-left: 2px solid #EDF7FA;
         transform: translateX(100vw);
-        transition: 1s;
+        transition: transform 1s;
     }
 
     .active {
