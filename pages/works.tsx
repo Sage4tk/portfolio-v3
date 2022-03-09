@@ -4,7 +4,6 @@ import Head from "next/head";
 //components
 import Nav from "../components/Nav";
 import Footer from "../components/Footer";
-import { useEffect } from "react";
 
 //css
 import styles from "../styles/Works.module.scss";
@@ -21,9 +20,7 @@ export const getStaticProps = async () => {
 }
 
 const Works :NextPage<any> = ({ projects }) => {
-    useEffect(() => {
-        console.log(projects)
-    })
+
     return (
         <div className={styles.works_page}>
             <Head>
@@ -49,8 +46,11 @@ const ProjectCard: React.FC<ProjectProps> = ({ data }) => {
         <div className={styles.works_card}>
             <img src={data.imgUrl} alt={data.title} />
             <div>
-                <p>{data.title}</p>
-                <p>{data.technology}</p>
+                <p className={styles.title}>{data.title}</p>
+                <div className={styles.flex}>
+                    <p>{data.technology}</p>
+                    <a href={data.imgUrl}>Visit</a>
+                </div>
                 <p>{data.websiteDescription}</p>
             </div>
         </div>

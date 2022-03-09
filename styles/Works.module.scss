@@ -1,3 +1,5 @@
+$primary: #ff6464;
+
 //works page
 .works_page {
     padding: 160px 235px 0;
@@ -22,16 +24,34 @@
     margin-right: 30px;
 }
 
-.works_card div > *:first-child {
+.title {
     font-weight: bold;
     font-size: 1.875rem;
     margin-bottom: 1rem;
 }
 
-.works_card div > *:nth-child(2) {
-    color: #8695A4;
-    font-size: 1.2rem;
+.flex {
     margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.flex > *:first-child {
+    color: #8695A4;
+    font-size: 1.2rem !important;
+    margin-right: 1rem;
+}
+
+.flex a {
+    background-color: $primary;
+    text-decoration: none;
+    color: #fff;
+    padding: 0 1rem;
+    border-radius: 1rem;
+    transition: background-color 0.2s;
+    &:hover {
+        background-color: #8695A4;
+    }
 }
 
 @media only screen and (max-width: 768px) {
