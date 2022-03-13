@@ -1,0 +1,27 @@
+$primary: #ff6464;
+$secondary: #EDF7FA;
+
+// .contact_page {
+//     padding: 160px 235px 0;
+// }
+.contact_page {
+    background: $primary;
+    margin-top: 160px;
+    padding: 1rem 235px;
+}
+
+.contact_page h1 {
+    font-size: 2.75rem;
+}
+
+//mobile
+@media only screen and (max-width: 768px) {
+    // .contact_page {
+    //     padding: 100px 13px 0
+    // }
+
+    .contact_page h1 {
+        font-size: 1.875rem;
+        margin-bottom: 40px;
+    }
+}
