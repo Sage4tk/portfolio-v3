@@ -49,7 +49,7 @@ const ProjectCard: React.FC<ProjectProps> = ({ data }) => {
                 <p className={styles.title}>{data.title}</p>
                 <div className={styles.flex}>
                     <p>{data.technology}</p>
-                    <a href={data.imgUrl}>Visit</a>
+                    <a href={data.websiteLink}>Visit</a>
                 </div>
                 <p>{data.websiteDescription}</p>
             </div>
