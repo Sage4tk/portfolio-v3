@@ -48,12 +48,32 @@ $secondary: #EDF7FA;
 
 //mobile
 @media only screen and (max-width: 768px) {
-    // .contact_page {
-    //     padding: 100px 13px 0
-    // }
+    .contact_page {
+        padding: 1rem 1rem 8rem;
+        flex-direction: column;
+    }
 
     .contact_page h1 {
         font-size: 1.875rem;
         margin-bottom: 40px;
+        text-align: center;
     }
+
+    .contact_exp {
+        width: auto;
+    }
+
+    .contact_card {
+        position: absolute;
+        left: 5%;
+        width: 90%;
+        top: auto;
+        bottom: -60%;
+    }
+
+    .contact_card div > *:first-child {
+        font-size: 1.2rem;
+        font-weight: bold;
+    }
+    
 }
