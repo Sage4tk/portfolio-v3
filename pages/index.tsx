@@ -27,6 +27,9 @@ export const getStaticProps = async () => {
 }
 
 const Home: NextPage<any> = ({ projects }) => {
+
+  const dlLink = "https://tttimboltestbucket.s3.ap-south-1.amazonaws.com/Timothy_Timbol_Resume.pdf";
+
   return (
     <div className="main-page">
       <Head>
@@ -39,7 +42,7 @@ const Home: NextPage<any> = ({ projects }) => {
         <div>
           <h1>Hello World, I am Timothy,<br/>a Front-End Developer</h1>
           <p>An aspiring developer from the Philippines and a life-long learner. I've coded for years and my mastery on front-end stacks will help solve problems. I wish not to limit myself and strive to learn new things everyday from coding to a better life.</p>
-          <button>Download Resume</button>
+          <button onClick={() => {window.open(dlLink, "_blank")}}>Download Resume</button>
         </div>
       </section>
       <section className={styles.main_projects}>
