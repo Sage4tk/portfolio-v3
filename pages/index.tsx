@@ -41,7 +41,7 @@ const Home: NextPage<any> = ({ projects }) => {
       <section className={styles.landing_wrapper}>
         <div>
           <h1>Hello World, I am Timothy,<br/>a Front-End Developer</h1>
-          <p>An aspiring developer from the Philippines and a life-long learner. I've coded for years and my mastery on front-end stacks will help solve problems. I wish not to limit myself and strive to learn new things everyday from coding to a better life.</p>
+          <p>An aspiring developer from the Philippines and a life-long learner. I&apos;ve coded for years and my mastery on front-end stacks will help solve problems. I wish not to limit myself and strive to learn new things everyday from coding to a better life.</p>
           <button onClick={() => {window.open(dlLink, "_blank")}}>Download Resume</button>
         </div>
       </section>
@@ -67,7 +67,7 @@ const Home: NextPage<any> = ({ projects }) => {
           <div className={styles.stack_exp}>
             <p>Front-end Languages</p>
             <p>Expert</p>
-            <p>My main profeciency is with front-end web technologies with HTML5, CSS3, and JavaScript. With CSS, I use SASS css preprocessor to ensure cross browser compatibility and easier workflow. With JavaScript, I'm profecient with Vanilla JS but my main front-end framework is with ReactJS and NextJS if the project requires alot of functionality. I'm not limited to these languanges and are always open to learn.</p>
+            <p>My main profeciency is with front-end web technologies with HTML5, CSS3, and JavaScript. With CSS, I use SASS css preprocessor to ensure cross browser compatibility and easier workflow. With JavaScript, I&apos;m profecient with Vanilla JS but my main front-end framework is with ReactJS and NextJS if the project requires alot of functionality. I&apos;m not limited to these languanges and are always open to learn.</p>
           </div>
         </div>
         <div className={styles.stack_container}>
@@ -77,7 +77,7 @@ const Home: NextPage<any> = ({ projects }) => {
           <div className={styles.stack_exp}>
             <p>Back-end Languages</p>
             <p>Advance</p>
-            <p>I've learned backend development to help understand how the web works and how it adds backbone to the front end spectrum. I have moderate knowledge in PHP and Pyhthon with backend frameworks like Django, HTTP methods to further help business logics in the online world. Furthermore, I've worked with database from relational databases and non-relations ones like MySql and MongoDB</p>
+            <p>I&apos;ve learned backend development to help understand how the web works and how it adds backbone to the front end spectrum. I have moderate knowledge in PHP and Pyhthon with backend frameworks like Django, HTTP methods to further help business logics in the online world. Furthermore, I&apos;ve worked with database from relational databases and non-relations ones like MySql and MongoDB</p>
           </div>
         </div>
       </section>
