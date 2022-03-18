@@ -62,7 +62,7 @@ const Home: NextPage<any> = ({ projects }) => {
         <h2>Stacks</h2>
         <div className={styles.stack_container}>
           <div className={styles.landing_img_holder}>
-            <Image src={front} />
+            <Image src={front} alt="Front End Coding"/>
           </div>
           <div className={styles.stack_exp}>
             <p>Front-end Languages</p>
@@ -72,7 +72,7 @@ const Home: NextPage<any> = ({ projects }) => {
         </div>
         <div className={styles.stack_container}>
           <div className={styles.landing_img_holder}>
-            <Image src={back} />
+            <Image src={back} alt="Back end coding"/>
           </div>
           <div className={styles.stack_exp}>
             <p>Back-end Languages</p>

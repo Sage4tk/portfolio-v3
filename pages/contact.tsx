@@ -13,6 +13,7 @@ const Contacts: NextPage = () => {
         <>
             <Head>
                 <title>Timothy Timbol | Contacts</title>
+                <meta name="description" content="Contact page where you can see timothy's contact information and other means" />
             </Head>
             <Nav page="contact" />
             <div className={styles.contact_page}>

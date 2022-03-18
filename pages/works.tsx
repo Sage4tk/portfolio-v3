@@ -25,6 +25,7 @@ const Works :NextPage<any> = ({ projects }) => {
         <div className={styles.works_page}>
             <Head>
                 <title>Timothy Timbol | Works</title>
+                <meta name="description" content="A list of timothy's web development projects" />
             </Head>
             <Nav page="works" />
             <h1>Works</h1>
