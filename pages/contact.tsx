@@ -17,8 +17,6 @@ const Contacts: NextPage = () => {
             </Head>
             <Nav page="contact" />
             <div className={styles.contact_page}>
-                
-
                 <div className={styles.contact_exp}>
                     <h1>GET IN TOUCH!</h1>
                     <p>I am looking for any job oppurtinities, project colaboration, or any help I can give. If you have any further questions you can reach me with the means presented in this page.</p>

@@ -41,7 +41,7 @@ const Home: NextPage<any> = ({ projects }) => {
       <Nav page="home"/>
       <section className={styles.landing_wrapper}>
         <div className={styles.my_picture}>
-          <Image src={me} layout="responsive" />
+          <Image src={me} layout="responsive" alt="Timothy Timbol" />
         </div>
         <div className={styles.landing_exp}>
           <h1>Hello World, I am Timothy,<br/>a Front-End Developer</h1>
