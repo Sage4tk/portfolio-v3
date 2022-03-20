@@ -147,22 +147,28 @@ $secondary: #EDF7FA;
 @media only screen and (max-width: 768px) {
     //landing page
     .landing_wrapper {
-        padding: 2rem;
-        
+        padding: 6rem 2rem 2rem 2rem;
+        //test
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
     }
 
     .my_picture {
-        position: absolute;
+        // position: absolute;
+        position: relative;
         width: 200px;
         height: 200px;
-        top: 10%;
-        right: 100px
+        // top: 10%;
+        // right: 100px
+        right: auto;
+        bottom: auto;
     }
 
     .landing_exp {
-        position: absolute;
-        bottom: 10%;
-        left: 0;
+        // position: absolute;
+        position: relative;
         display: flex;
         flex-direction: column;
     }
@@ -171,6 +177,7 @@ $secondary: #EDF7FA;
         font-size: 2rem;
         text-align: center;
         padding: 0 2rem;
+        margin-top: 0;
     }
 
     .landing_wrapper p {
