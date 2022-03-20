@@ -13,6 +13,7 @@ import Footer from '../components/Footer'
 //images
 import front from '../img/frontend.jpg';
 import back from '../img/backend.jpg';
+import me from '../img/me.jpg';
 
 //get projects from api
 export const getStaticProps = async () => {
@@ -39,7 +40,10 @@ const Home: NextPage<any> = ({ projects }) => {
       </Head>
       <Nav page="home"/>
       <section className={styles.landing_wrapper}>
-        <div>
+        <div className={styles.my_picture}>
+          <Image src={me} layout="responsive" />
+        </div>
+        <div className={styles.landing_exp}>
           <h1>Hello World, I am Timothy,<br/>a Front-End Developer</h1>
           <p>An aspiring developer from the Philippines and a life-long learner. I&apos;ve coded for years and my mastery on front-end stacks will help solve problems. I wish not to limit myself and strive to learn new things everyday from coding to a better life.</p>
           <button onClick={() => {window.open(dlLink, "_blank")}}>Download Resume</button>
