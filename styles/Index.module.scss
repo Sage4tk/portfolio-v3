@@ -147,7 +147,8 @@ $secondary: #EDF7FA;
 @media only screen and (max-width: 768px) {
     //landing page
     .landing_wrapper {
-        padding: 6rem 2rem 2rem 2rem;
+        height: 110vh;
+        padding: 6rem 2rem 6rem 2rem;
         //test
         display: flex;
         flex-direction: column;
